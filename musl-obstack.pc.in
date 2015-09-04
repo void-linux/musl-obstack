@@ -1,0 +1,10 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: musl-obstack
+Description: Implementation of obstack functions for musl libc
+Version: @VERSION@
+Libs: -L${libdir} -lobstack
+Cflags: -I${includedir}
