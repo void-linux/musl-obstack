@@ -1,5 +1,6 @@
 ## Makefile.am - procress this file with automake to produce Makefile.in
-lib_LIBRARIES = libobstack.a
-libobstack_a_SOURCES = obstack.c
-libobstack_a_HEADERS = obstack.h
-libobstack_adir = $(includedir)
+lib_LTLIBRARIES = libobstack.la
+libobstack_la_SOURCES = obstack.c
+libobstack_la_HEADERS = obstack.h
+libobstack_ladir = $(includedir)
+ACLOCAL_AMFLAGS = -Im4
