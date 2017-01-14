@@ -12,5 +12,7 @@ AC_PROG_LIBTOOL
 
 AC_CHECK_HEADERS(stddef.h stdio.h stdint.h inttypes.h)
 
+PKG_INSTALLDIR
+
 AC_CONFIG_FILES([Makefile musl-obstack.pc])
 AC_OUTPUT
