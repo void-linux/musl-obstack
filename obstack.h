@@ -235,6 +235,8 @@ int obstack_alignment_mask (struct obstack *obstack);
 int obstack_chunk_size (struct obstack *obstack);
 int obstack_memory_used (struct obstack *obstack);
 
+int obstack_printf(struct obstack *obstack, const char *__restrict fmt, ...);
+
 /* Error handler called when `obstack_chunk_alloc' failed to allocate
    more memory.  This can be set to a user defined function.  The
    default action is to print a message and abort.  */
