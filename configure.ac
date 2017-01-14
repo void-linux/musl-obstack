@@ -2,7 +2,7 @@ dnl Process this file with autoconf to produce a configure script
 
 AC_PREREQ(2.69)
 
-AC_INIT([obstack], [1.0], [pullmoll@t-online.de])
+AC_INIT([obstack], [1.1], [pullmoll@t-online.de])
 
 AM_INIT_AUTOMAKE([1.15])
 AC_CONFIG_MACRO_DIR([m4])
