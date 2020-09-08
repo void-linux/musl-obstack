@@ -10,8 +10,14 @@ config.log
 config.status
 config.sub
 configure
+config.h
+config.h.in
+config.h.in~
 depcomp
+libtool
 ltmain.sh
 install-sh
 missing
+musl-obstack.pc
+stamp-h1
 m4/

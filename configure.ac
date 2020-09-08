@@ -6,6 +6,7 @@ AC_INIT([obstack], [1.2], [pullmoll@t-online.de])
 
 AM_INIT_AUTOMAKE([1.16])
 AC_CONFIG_MACRO_DIR([m4])
+AC_CONFIG_HEADERS([config.h])
 
 AC_PROG_CC
 AC_PROG_LIBTOOL
