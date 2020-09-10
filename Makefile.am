@@ -2,6 +2,7 @@
 lib_LTLIBRARIES = libobstack.la
 libobstack_la_SOURCES = obstack.c obstack_printf.c
 libobstack_la_HEADERS = obstack.h
+libobstack_la_LDFLAGS = -version-info 1
 libobstack_ladir = $(includedir)
 ACLOCAL_AMFLAGS = -Im4
 
