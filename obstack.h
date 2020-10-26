@@ -211,6 +211,9 @@ extern int _obstack_begin_1 (struct obstack *,
 extern _OBSTACK_SIZE_T _obstack_memory_used (struct obstack *)
   __attribute_pure__;
 
+/* Declare obstack_printf; it's in obstack_printf.c. */
+extern int obstack_printf(struct obstack *obstack, const char *__restrict fmt, ...);
+
 
 /* Error handler called when 'obstack_chunk_alloc' failed to allocate
    more memory.  This can be set to a user defined function which
