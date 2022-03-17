@@ -294,6 +294,8 @@ _obstack_free (struct obstack *h, void *obj)
     abort ();
 }
 
+extern __typeof(_obstack_free) obstack_free __attribute__((alias("_obstack_free")));
+
 _OBSTACK_SIZE_T
 _obstack_memory_used (struct obstack *h)
 {
