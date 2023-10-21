@@ -110,6 +110,7 @@
 
 #include <stddef.h>             /* For size_t and ptrdiff_t.  */
 #include <string.h>             /* For __GNU_LIBRARY__, and memcpy.  */
+#include <stdarg.h>             /* For va_list. */
 
 #if _OBSTACK_INTERFACE_VERSION == 1
 /* For binary compatibility with obstack version 1, which used "int"
@@ -213,6 +214,7 @@ extern _OBSTACK_SIZE_T _obstack_memory_used (struct obstack *)
 
 /* Declare obstack_printf; it's in obstack_printf.c. */
 extern int obstack_printf(struct obstack *obstack, const char *__restrict fmt, ...);
+extern int obstack_vprintf(struct obstack *obstack, const char *__restrict fmt, va_list args);
 
 
 /* Error handler called when 'obstack_chunk_alloc' failed to allocate
